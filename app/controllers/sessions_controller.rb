@@ -1,9 +1,9 @@
 class SessionsController < ApplicationController
   def new
 
-   end
+  end
 
-   def create
+  def create
     if params[:name].nil? || params[:name].empty?
       redirect_to root_path
     else
