@@ -18,11 +18,6 @@ class ApplicationController < ActionController::Base
   end
 
 
- # helper methods
-  # def logged_in?
-  #   !!session[:name] && !session[:name].empty?
-  # end
-
    def logout!
     session.destroy
     redirect to '/'
