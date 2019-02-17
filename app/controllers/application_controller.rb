@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
 
   def hello
     if !!current_user
-      render '/application/hello'
+      render :hello
     else
       redirect_to root_path
     end
