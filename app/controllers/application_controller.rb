@@ -5,11 +5,11 @@ class ApplicationController < ActionController::Base
   
   helper_method :logged_in?, :logout!
 
-   def current_user
+  def current_user
     session[:name]
   end
 
-   def hello
+  def hello
     if !!current_user
       render '/application/hello'
     else
